@@ -1712,4 +1712,17 @@
         outline: none;
         cursor: pointer;
     }
+
+    
+
+    /* tags area */
+    .wrapper {
+        width: 75vw;
+    }
+
+    .wrapper .text-1 {
+        width: 10vw !important;
+    }
+    /* end of tags area */
+
 }

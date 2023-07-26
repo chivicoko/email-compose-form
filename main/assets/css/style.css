@@ -4655,3 +4655,86 @@ p {
     justify-content: space-between;
     /* height: calc(100vh - 20vh); */
 }
+
+
+/* tags area */
+.wrapper {
+    width: 51vw;
+    /* background: #fff; */
+    /* border-radius: 10px; */
+    /* padding: 18px 25px 20px; */
+}
+
+/* .wrapper-container {
+    display: flex !important;
+    width: 100% !important;
+    height: 100% !important;
+} */
+
+.wrapper :where(.title, li, li i, .details) {
+    display: flex;
+    align-items: center;
+}
+
+/* .wrapper .content {
+    margin: 5px 0;
+} */
+
+/* .wrapper .content p {
+    font-size: 15px;
+} */
+
+.wrapper .content ul {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 2px;
+    margin: 5px 0;
+    /* border-radius: 5px; */
+    border: 1px solid #d2d0d0;
+}
+
+.wrapper .content ul li {
+    list-style: none;
+    margin: 2px;
+    border-radius: 5px;
+    background: #f2f2f2;
+    padding: 5px;
+    border: 1px solid #e3d1e1;
+}
+
+.wrapper .content ul li i {
+    height: 20px;
+    width: 20px;
+    background: #dfdfdf;
+    border-radius: 50%;
+    margin-left: 8px;
+    font-size: 12px;
+    justify-content: center;
+    color: #808080;
+    cursor: pointer;
+}
+
+.wrapper .content ul input {
+    flex: 1;
+    outline: none;
+    border: none;
+    padding: 5px;
+    font-size: 16px;
+}
+
+/* .wrapper .details {
+    justify-content: space-between;
+} */
+
+.wrapper button {
+    border: none;
+    outline: none;
+    /* color: #fff; */
+    cursor: pointer;
+    font-size: 14px;
+    padding: 9px 15px;
+    border-radius: 5px;
+    /* background: #5372f0; */
+}
+
+/* end of tags area */
