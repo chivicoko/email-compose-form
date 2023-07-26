@@ -1,0 +1,19 @@
+#b-dropzone-wrapper {
+    border: 1px solid black;
+    }
+    
+    #b-dropzone-wrapper .full-width {
+      width: 100%
+    }
+    
+    #b-dropzone-wrapper textarea {
+      resize: none;
+      border: none;
+      width: 99%;
+    }
+    
+    #my-dropzone {
+      top: -5px;
+      position: relative;
+      border: none;
+    }

@@ -1,5 +1,5 @@
 const ul = document.querySelector("ul"),
-input = document.querySelector("input"),
+input = document.querySelector(".ul-input input"),
 countNumber = document.querySelector(".details span");
 
 let maxTags = 10,
@@ -53,3 +53,31 @@ removeBtn.addEventListener("click", () => {
     ul.querySelectorAll("li").forEach(li => li.remove());  // removing all li tags
     countTag()
 })
+
+
+// recipient display
+let recipient = document.querySelector('.recipient-username');
+let recipientInput = document.querySelector('.recipient-username input');
+let ccBtn = document.querySelector('.cc-btn');
+let ccDeleteBtn = document.querySelector('.trash-can');
+
+const ccInputDisplay = () => {
+    ccBtn.addEventListener('click', () => {
+        if (recipient.classList.contains('d-none')){
+            recipient.classList.remove('d-none');
+        } else {
+            recipient.classList.add('d-none');
+        }
+    });
+}
+
+ccInputDisplay();
+
+const ccInputDelete = () => {
+    ccDeleteBtn.addEventListener('click', () => {
+        recipient.classList.add('d-none');
+        recipientInput.value = '';
+    });
+}
+
+ccInputDelete();
