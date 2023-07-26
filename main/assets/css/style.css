@@ -4737,4 +4737,8 @@ p {
     /* background: #5372f0; */
 }
 
+.wrapper-container {
+    display: flex;
+}
+
 /* end of tags area */
