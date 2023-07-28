@@ -4749,3 +4749,11 @@ p {
     padding: 15px 20px;
     margin: 0 !important;
 }
+
+.textarea-file-input textarea {
+    resize: none;
+}
+
+.textarea-file-input textarea:focus {
+    box-shadow: none;
+}
