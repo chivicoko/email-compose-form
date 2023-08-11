@@ -4750,8 +4750,14 @@ p {
     margin: 0 !important;
 }
 
+/* .textarea-file-input {
+    border: .5px rgb(212, 208, 208) solid;
+    border-radius: 15px;/
+} */
+
 .textarea-file-input textarea {
     resize: none;
+    border: none;
 }
 
 .textarea-file-input textarea:focus, .file-input:focus {
