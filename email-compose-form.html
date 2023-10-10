@@ -32,17 +32,19 @@
 
     <script>
         tinymce.init({
-          selector: '#mytextarea',
-          statusbar: false,
-          plugins: 'ai tinycomments mentions anchor autolink charmap codesample emoticons image link lists media searchreplace table visualblocks wordcount checklist mediaembed casechange export formatpainter pageembed permanentpen footnotes advtemplate advtable advcode editimage tableofcontents mergetags powerpaste tinymcespellchecker autocorrect a11ychecker typography inlinecss',
-          toolbar: 'undo redo | blocks fontfamily fontsize | bold italic underline strikethrough | link image media table mergetags | align lineheight | tinycomments | checklist numlist bullist indent outdent | emoticons charmap | removeformat',
-          tinycomments_mode: 'embedded',
-          tinycomments_author: 'Author name',
-          mergetags_list: [
+            selector: '#mytextarea',
+            statusbar: false,
+            plugins: 'ai tinycomments mentions anchor autolink charmap codesample emoticons image link lists media searchreplace table visualblocks wordcount checklist mediaembed casechange export formatpainter pageembed permanentpen footnotes advtemplate advtable advcode editimage tableofcontents mergetags powerpaste tinymcespellchecker autocorrect a11ychecker typography inlinecss',
+            toolbar: 'undo redo | blocks fontfamily fontsize | bold italic underline strikethrough | link image media table mergetags | align lineheight | tinycomments | checklist numlist bullist indent outdent | emoticons charmap | removeformat',
+            tinycomments_mode: 'embedded',
+            tinycomments_author: 'Author name',
+            height: 250,
+            // content_style: 'body { font-family: Arial, sans-serif; font-size: 24px; background-color: #000; }',
+            mergetags_list: [
             { value: 'First.Name', title: 'First Name' },
             { value: 'Email', title: 'Email' },
-          ],
-          ai_request: (request, respondWith) => respondWith.string(() => Promise.reject("See docs to implement AI Assistant"))
+            ],
+        //   ai_request: (request, respondWith) => respondWith.string(() => Promise.reject("See docs to implement AI Assistant"))
         });
       </script>
 
@@ -116,9 +118,9 @@
                             <input type="text" class="form-control" aria-label="Amount (to the nearest dollar)">
                         </div>
 
-                        <div class="form-group textarea-file-input ">
-                            <textarea class="form-control border-0 mb-3 p-0" id="mytextarea" rows="7" placeholder="Compose message here"></textarea>
-                            <input class="border-0 form-control m-0 pl- file-input" type="file" name="" id="">
+                        <div class="form-group textarea-file-input">
+                            <textarea class="form-control border-0 mb-3 p-0" id="mytextarea" rows="" placeholder="Compose message here"></textarea>
+                            <input class="border-0 form-control m-0 file-input" type="file" name="" id="">
                         </div>
 
 
