@@ -14,7 +14,7 @@ function countTag() {
 function createTag () {
     ul.querySelectorAll("li").forEach(li => li.remove());
 
-    console.log(tags);
+    // console.log(tags);
     tags.slice().reverse().forEach(tag => {
         let liTag = `<li>${tag}<i class="fa fa-times" aria-hidden="true" onclick="remove(this, '${tag}')"></i></li>`;
         ul.insertAdjacentHTML("afterbegin", liTag);
